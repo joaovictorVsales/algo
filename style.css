@@ -5,4 +5,89 @@
 
 body{
     background-image:url(imgs/papel.jpg);
+    font-family: 'Times New Roman', Times, serif;
 }
+
+#title{
+    text-align: center;
+    color: rgb(233, 230, 230);
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#container{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 485px;
+    height: 100%;
+    border-radius: 7px;
+    word-break: break-all;   
+}
+
+#lista_input{
+    border-radius: 7px;
+    padding: 2px 6px;
+    width: 400px;
+    height: 20px;
+    margin: 6px 2px;
+    font-size: 18px;
+    border: 0;
+}
+
+#lista_input:focus{
+    outline: none;
+}
+
+#lista_botao{
+    border-radius: 5px;
+    font-size: 18px;
+    width: 40px;
+    background-color: darkturquoise;
+    border: 0;
+    transition: transform 0.5s ease;
+}
+
+#lista_botao:hover{
+    background-color: turquoise;
+    color: white;
+    transform: scale(2);
+}
+
+#lista_print div{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+#lista_print li{
+    list-style-type: upper-roman;
+    margin: 8px 0px 8px 28px;
+    width: 385px;
+    background-color: rgb(197, 193, 193);
+    border-radius: 7px;
+    text-align: left;
+    padding: 3px 6px;
+    font-size: 16px;
+}
+
+#lista_print li::marker{
+    color: darkturquoise;
+}
+
+#lista_print button{
+    border-radius: 50px;
+    font-size: 14px;
+    width: 30px;
+    background-color: rgb(156, 0, 0);
+    border: 0;
+    transition: transform 0.5s ease;
+}
+
+#lista_print button:hover{
+    background-color: red;
+    color: white;
+    transform: scale(2);
+}
+
+

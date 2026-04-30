@@ -18,10 +18,24 @@ botao.addEventListener("click", function(){
 })
 
 function mostrar_lista(){
-    lista.innerHTML = ""
-    tarefas.forEach(function(tarefa) {
-        let item = document.createElement("li")
+    lista.innerHTML = "";
+
+    tarefas.forEach(function(tarefa, index) {
+
+        let div = document.createElement("div") ;
+
+        let item = document.createElement("li");
         item.innerText = tarefa;
-        lista.append(item);
+
+        let X = document.createElement("button");
+        X.innerText = "X";
+
+        X.addEventListener("click", function(){
+            tarefas.splice(index, 1);
+            mostrar_lista();
+        })
+        div.append(item);
+        div.append(X);
+        lista.append(div);
     });
 }
